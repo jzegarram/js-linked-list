@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+
+            <div>
+                <p class="read-the-docs">
+                    Registro de Empleados
+                </p>
+                <div class="container">
+                    <div class="input-group">
+                        <label for="codigo">CODIGO</label>
+                        <input type="text" id="codigo">
+                        <label for="nombre">NOMBRE</label>
+                        <input type="text" id="nombre">
+                        <label for="sueldo">SUELDO</label>
+                        <input type="text" id="sueldo">
+                    </div>
+                    <div class="button-group">
+                        <button id="guardarBtn">Guardar</button>
+                        <button id="consultarBtn">Consultar</button>
+                        <button id="eliminarBtn">Eliminar</button>
+                        <button id="eliminarFirstBtn">Eliminar Primero</button>
+                        <button id="eliminarLastBtn">Eliminar Ultimo</button>
+                        <button id="actualizarBtn">Actualizar</button>
+                        <!-- Other buttons can be added here -->
+                    </div>
+                </div>
+                <table id="employeeTable">
+                    <thead>
+                        <tr>
+                            <th>N</th>
+                            <th>CODIGO</th>
+                            <th>NOMBRE</th>
+                            <th>SUELDO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+ 
+    </div>
+
+<div id="employeeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Detalles del Empleado</h2>
+      <p id="modalName">Name: </p>
+      <p id="modalSalary">Salary: </p>
+    </div>
+  </div>
+  
+  
+    <script type="module" src="/index.js"></script>
+</body>
+</html>
